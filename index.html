@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home - Sylkore</title>
+        <title>Home - Sylkore</title>
   <meta charset="UTF-8">
   <meta name="theme-color" content="rgb(17, 24, 49)">
   <meta name="author" content="inialiyaar">
@@ -23,6 +23,47 @@
   <link rel="shortcut icon" type="image/x-icon/" href="favicon/favicon.ico" />
 </head>
 <body>
-  <h1>Welcome</h1>
+  <header>
+    <nav class="flex justify-between">
+      <div class="logo flex align-center">
+        <img src="/assets/sylkore.jpg" alt="Sylkore">
+        <h1><span>SYLK</span>ORE</h1>
+      </div>
+      <img src="assets/icons/cart.svg">
+    </nav>
+    <div class="hero-pannel flex justify-center align-center flex-column">
+      <h3>Glow from within.</h3>
+      <p>Premium skincare and Wellness for you.</p>
+      <button id="shopNow">SHOP NOW</button>
+    </div>
+  </header>
+  <main>
+    <section class="shop flex align-center flex-column">
+      <h2>Our Products</h2>
+      <h3>Trending Now</h3>
+      <ul class="flex justify-between">
+        <li><button class="exploreBtnActive">All</button></li>
+        <li><button>Wellness</button></li>
+        <li><button>Beauty</button></li>
+      </ul>
+      <section class="allShop flex flex-column align-center">
+        <div class="product flex flex-column align-center justify-center">
+          <img src="/assets/hairOil.jpg" alt="Hair Health Oil">
+          <h2>Hair Health Oil</h2>
+          <button>Add to cart</button>
+        </div>
+      </section>
+      <section hidden class="wellnessShop">
+        
+      </section>
+      <section hidden class="beautyShop">
+        
+      </section>
+    </section>
+  </main>
+  <footer class="footer flex flex-column justify-center align-center">
+    <p>© 2024 Sylkore India. All rights reserved.</p>
+    <p>Beauty starts with you.</p>
+  </footer>
 </body>
 </html>

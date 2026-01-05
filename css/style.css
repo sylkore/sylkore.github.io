@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --primary: #d4a5a5;
   --secondary: #8da399;
@@ -17,4 +19,129 @@
 body {
   background-color: var(--light);
   color: var(--dark);
+}
+
+header nav {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  background-color: var(--light);
+}
+header nav h1 {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 28px;
+}
+header nav span {
+  color: var(--dark);
+}
+header nav img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+header nav .logo img {
+  border-radius: 50%;
+  margin: 0 10px;
+  width: 40px;
+}
+.logo {
+  width: 200px;
+}
+
+.hero-pannel {
+  background-color: var(--primary);
+  height: 300px;
+  position: relative;
+  top: 70px;
+}
+.hero-pannel h3{
+  color: var(--dark);
+  font-size: 36px;
+}
+
+.hero-pannel button{
+  position: absolute;
+  bottom: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #1A1A1A;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-size: 25px;
+  transition: font-size 500ms;
+}
+
+.hero-pannel button:hover {
+  font-size: 27px;
+}
+main{
+  position: relative;
+  top: 70px;
+}
+.shop h2{
+  margin-top: 10px;
+}
+.shop ul{
+  margin-top: 20px;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style: none;
+}
+.shop ul li button{
+  background: none;
+  padding: 5px 20px;
+  min-width: 90px;
+  border-radius: 70px;
+  border: 2px solid black;
+}
+
+.exploreBtnActive{
+  background-color: var(--dark) !important;
+  color: white !important;
+}
+
+.shop > section {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  height: 500px;
+  overflow: scroll;
+}
+.product{
+  width: 80%;
+  max-width: 300px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  min-height: 450px;
+}
+.product img{
+  width: 80%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+.product button {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 3px 40px;
+  margin-top: 10px;
+  color: var(--light);
+  background-color: var(--dark);
+  border: none;
+  border-radius: 5px;
+}
+
+.footer {
+  height: 80px;
+  background-color: var(--dark);
+  color: var(--light);
+  width: 100%;
+}
+.footer{
+  font-size: 14px;
 }
