@@ -1,147 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
-  --primary: #d4a5a5;
-  --secondary: #8da399;
-  --dark: #333;
-  --light: #f9f9f9;
-  --white: #ffffff;
-  --text-grey: #666;
+    --primary: #d4a5a5;
+    --dark: #333;
+    --light: #f9f9f9;
+    --white: #ffffff;
+    --grey: #666;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: var(--light);
-  color: var(--dark);
+    background: var(--light);
+    color: var(--dark);
+}
+nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    background: var(--white);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-header nav {
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0px;
-  z-index: 1;
-  background-color: var(--light);
-}
-header nav h1 {
-  color: var(--primary);
-  font-weight: 600;
-  font-size: 28px;
-}
-header nav span {
-  color: var(--dark);
-}
-header nav img {
-  width: 30px;
-  margin: 0 10px;
-}
-
-header nav .logo img {
-  border-radius: 50%;
-  margin: 0 10px;
-  width: 40px;
-}
 .logo {
-  width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.hero-pannel {
-  background-color: var(--primary);
-  height: 300px;
-  position: relative;
-  top: 70px;
-}
-.hero-pannel h3{
-  color: var(--dark);
-  font-size: 36px;
+.logo img {
+    width: 40px;
+    border-radius: 50%;
 }
 
-.hero-pannel button{
-  position: absolute;
-  bottom: 30px;
-  color: #ffffff;
-  font-weight: bold;
-  background-color: #1A1A1A;
-  border: none;
-  border-radius: 10px;
-  padding: 5px 15px;
-  font-size: 25px;
-  transition: font-size 500ms;
+.logo h1 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.hero {
+    background: var(--primary);
+    text-align: center;
+    padding: 70px 20px;
 }
 
-.hero-pannel button:hover {
-  font-size: 27px;
-}
-main{
-  position: relative;
-  top: 70px;
-}
-.shop h2{
-  margin-top: 10px;
-}
-.shop ul{
-  margin-top: 20px;
-  justify-content: space-evenly;
-  width: 100%;
-  list-style: none;
-}
-.shop ul li button{
-  background: none;
-  padding: 5px 20px;
-  min-width: 90px;
-  border-radius: 70px;
-  border: 2px solid black;
+.hero h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
 }
 
-.exploreBtnActive{
-  background-color: var(--dark) !important;
-  color: white !important;
+.hero p {
+    color: var(--dark);
+    opacity: 0.8;
+}
+.products {
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.shop > section {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  height: 500px;
-  overflow: scroll;
-}
-.product{
-  width: 80%;
-  max-width: 300px;
-  background-color: #f0f0f0;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  min-height: 450px;
-}
-.product img{
-  width: 80%;
-  max-width: 300px;
-  height: 300px;
-  border-radius: 5px;
-}
-.product button {
-  font-size: 20px;
-  font-weight: 500;
-  padding: 3px 40px;
-  margin-top: 10px;
-  color: var(--light);
-  background-color: var(--dark);
-  border: none;
-  border-radius: 5px;
+.card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
 }
 
-.footer {
-  height: 80px;
-  background-color: var(--dark);
-  color: var(--light);
-  width: 100%;
+.card:hover {
+    transform: translateY(-6px);
 }
-.footer{
-  font-size: 14px;
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.size {
+    font-size: 14px;
+    color: var(--grey);
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+.contact {
+    text-align: center;
+    margin: 40px 0 60px;
+}
+
+.whatsapp-btn {
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+}
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
